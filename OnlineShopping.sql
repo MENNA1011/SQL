@@ -63,3 +63,11 @@ CREATE TABLE Associated (
 	FOREIGN KEY (OrderDetailID) REFERENCES OrderDetails(OrderDetailID),
     PRIMARY KEY (OrderID, ProductID),
 );
+
+INSERT INTO Products (ProductName, Price, Category, Discription)
+VALUES
+('Laptop', 33000.00, 'Electronics', 'High-performance laptop');
+
+INSERT INTO Customers (Name, Email, PhoneNum, Address)
+VALUES
+('menna', 'menna@gmail.com', 1234567890, '123 Main St, NY');
